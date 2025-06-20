@@ -1,9 +1,10 @@
-import { formatNumber } from '../utils/formatNumber';
+// components/CardPizza.jsx
+import { formatNumber } from "../utils/formatNumber";
 
 const CardPizza = ({ name, price, ingredients, img }) => {
   return (
-    <div className="card shadow-sm" style={{ width: '18rem', minHeight: '100%' }}>
-      <img src={img} className="card-img-top" alt={`Pizza ${name}`} style={{ height: '180px', objectFit: 'cover' }} />
+    <div className="card shadow-sm" style={{ width: "18rem", minHeight: "100%" }}>
+      <img src={img} className="card-img-top" alt={`Pizza ${name}`} style={{ height: "180px", objectFit: "cover" }} />
       <div className="card-body d-flex flex-column justify-content-between">
         <div>
           <h5 className="card-title">{name}</h5>
@@ -27,3 +28,4 @@ const CardPizza = ({ name, price, ingredients, img }) => {
 };
 
 export default CardPizza;
+

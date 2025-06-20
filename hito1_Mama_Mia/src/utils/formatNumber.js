@@ -1,3 +1,5 @@
-export const formatNumber = (number) => {
-  return new Intl.NumberFormat("es-CL").format(number);
+// utils/formatNumber.js
+export const formatNumber = (num) => {
+  return num.toLocaleString("es-CL");
 };
+
